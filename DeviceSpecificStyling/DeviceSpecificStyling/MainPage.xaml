@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resourceServices:DeviceSpecificBasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DeviceSpecificStyling"
+             xmlns:resourceServices="clr-namespace:DeviceSpecificStyling.ResourceServices;assembly=DeviceSpecificStyling"
+             PageName="MainPage"
+             x:Class="DeviceSpecificStyling.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Default value, used when not overridden by device specific value-->
+            <x:Double x:Key="TitleFontSize">72</x:Double>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Label Text="Welcome to Xamarin Forms!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+           FontSize="{DynamicResource TitleFontSize}" />
+</resourceServices:DeviceSpecificBasePage>
